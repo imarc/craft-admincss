@@ -1,0 +1,52 @@
+{
+    "name": "imarc/craft-admincss",
+    "description": "Adds colors to Neoblocks in CMS for easier editing",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "marketo",
+        "craft-admincss",
+        "admincss-plugin"
+    ],
+    "support": {
+        "docs": "https://github.com/LinneaHarts/craft-admincss/blob/master/README.md",
+        "issues": "https://github.com/LinneaHarts/craft-admincss/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Spears",
+            "homepage": "https://www.imarc.com"
+        },
+        {
+            "name": "Linnea Hartsuyker",
+            "homepage": "https://www.imarc.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "imarc\\admincss\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "AdminCss",
+        "handle": "admincss",
+        "developer": "Tim Spears",
+        "developerUrl": "https://www.imarc.com",
+        "documentationUrl": "https://github.com/LinneaHarts/craft-admincss/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/LinneaHarts/craft-admincss/master/CHANGELOG.md",
+        "class": "imarc\\admincss\\AdminCss"
+    }
+}
