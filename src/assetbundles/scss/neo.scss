@@ -1,0 +1,57 @@
+// * =====================================================================
+// * Color Pallete for Admin Neo Blocks
+// * Feel free to change the colors to best suite the project, consider staying away from common
+// * status colors like RED (Error / Warning), GREEN (Confirmation / Success ) or YELLOW (Needs Attention / Notice).
+// * =====================================================================
+
+$admin-teal: #52C4E0;
+$admin-purple: #6C2AA5;
+$admin-blue:#106DF9;
+
+$borderOptions:  $admin-teal, $admin-blue, $admin-purple;
+$borderOptionsLength: length($borderOptions);
+
+@mixin admin-borders() {
+   > .ni_block {
+      border-radius: 4px 0 0 4px;
+   }
+
+   @for $i from 1 through $borderOptionsLength {
+
+      > .ni_block:nth-child(#{$borderOptionsLength}n + #{$i}) {
+         $custom-color: nth($borderOptions, $i);
+         $custom-fade: 0.025;
+         background-color: rgba( $custom-color, $custom-fade);
+         border-bottom: 3px solid rgba($custom-color, 0.5);
+         border-right: 6px solid $custom-color;
+
+         body.ltr & {
+            &.is-collapsed {
+               > .ni_block_topbar {
+                  .ni_block_topbar_left:before {
+                     background-image: linear-gradient(-90deg, rgba($custom-color, $custom-fade),rgba($custom-color,0) 40px,rgba($custom-color,0));
+                  }
+               }
+            }
+         }
+
+         .ni_block_content_tab {
+            > .ni_block_children {
+               > .ni_blocks {
+                  > .ni_block {
+                     border-bottom: 2px solid rgba($custom-color, 0.5 );
+                     border-right: 3px solid rgba($custom-color, 0.5 );
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.neo-input {
+
+   > .ni_blocks {
+      @include admin-borders();
+   }
+}

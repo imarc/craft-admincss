@@ -1,9 +1,9 @@
 <?php
 /**
  * AdminCSS plugin for Craft CMS 3.x
- * 
+ *
  * Adds a stylesheet with colors for Neo Blocks
- * 
+ *
  * @link    https://www.imarc.com
  * @copyright Copyright (c) 2022 Tim Spears and Linnea Hartsuyker
  */
@@ -16,7 +16,7 @@
 
  class AdminCssAsset extends AssetBundle
  {
-    public function init() 
+    public function init()
     {
 
         $this->sourcePath = "@imarc/admincss/assetbundles/dist";
@@ -26,7 +26,7 @@
         ];
 
         $this->css = [
-            'css/AdminCss.css'
+            'css/craft-custom-admin-styles.css'
         ];
 
         parent::init();

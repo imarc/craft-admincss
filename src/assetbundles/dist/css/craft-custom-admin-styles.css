@@ -1,3 +1,9 @@
+/* Sidebar background color */
+/* Header background color */
+/* H1 tags */
+/* Standard button color */
+/* Hover button color */
+/* Active button color */
 .neo-input > .ni_blocks > .ni_block {
   border-radius: 4px 0 0 4px;
 }
@@ -38,4 +44,4 @@ body.ltr .neo-input > .ni_blocks > .ni_block:nth-child(3n+3).is-collapsed > .ni_
   border-right: 3px solid rgba(108, 42, 165, 0.5);
 }
 
-/*# sourceMappingURL=admin.css.map*/
+/*# sourceMappingURL=craft-custom-admin-styles.css.map */

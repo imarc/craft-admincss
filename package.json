@@ -1,0 +1,32 @@
+{
+  "name": "craft-admincss",
+  "version": "1.0.0",
+  "description": "A basic stylesheet for Craft CMS Admin to create a better UI especially for Matrix and Neo blocks.",
+  "scripts": {
+    "build": "sass src/assetbundles/scss/index.scss src/assetbundles/dist/css/craft-custom-admin-styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imarc/craft-admincss.git"
+  },
+  "keywords": [
+    "Craft",
+    "CMS",
+    "CSS",
+    "admin"
+  ],
+  "author": "Imarc",
+  "contributors": [
+    "Tim Spears <timspears@imarc.com>",
+    "Linnea Hartsuyker <linneahartsuyker@imarc.com>"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imarc/craft-admincss/issues"
+  },
+  "homepage": "https://github.com/imarc/craft-admincss#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

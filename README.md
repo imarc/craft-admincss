@@ -31,3 +31,11 @@ To install the plugin, follow these instructions.
         composer require imarc/craft-admincss
 
 4. In the Control Panel, go to Settings → Plugins and click the “Install” button for AdminCss.
+
+## Update Styles
+1. Run `npm install`
+
+2. Make changes to the .scss files in `src/assetbundles/scss/`
+
+3. Run `npm run build`
+
